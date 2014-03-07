@@ -5,7 +5,6 @@
 //  Created by fuyong on 14-2-26.
 //  Copyright (c) 2014年 Stanford University. All rights reserved.
 //
-//  ok byyonge second changes
 
 #import <Foundation/Foundation.h>
 #import "Deck.h"
