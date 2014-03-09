@@ -17,11 +17,14 @@
     int score = 0;
     
     if ([otherCards count] == 1) {
-        PlayingCard *otherCard = [otherCards firstObject];
-        if (otherCard.rank == self.rank) {
-            score = 4;
-        } else if([otherCard.suit isEqualToString:self.suit]){
-            score = 1;
+        id card = [otherCards firstObject];
+        if ([card isKindOfClass:[PlayingCard class]]) {        
+            PlayingCard *otherCard = card;
+            if (otherCard.rank == self.rank) {
+                score = 4;
+            } else if([otherCard.suit isEqualToString:self.suit]){
+                score = 1;
+            }
         }
     }
     
